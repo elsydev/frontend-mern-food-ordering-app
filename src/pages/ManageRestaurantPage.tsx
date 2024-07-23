@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import ManageRestaurantForm from "../forms/manage.restaurant-form/ManageRestaurantForm";
 import {
   useCreateMyRestaurant,
