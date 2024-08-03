@@ -14,7 +14,7 @@ const AppRoutes = () => {
       <Route
         path="/"
         element={
-          <Layout showHero={true}>
+          <Layout showHero>
             <HomePage />
           </Layout>
         }
@@ -37,6 +37,14 @@ const AppRoutes = () => {
         }
       />
       <Route element={<ProtectedRoute />}>
+        <Route
+          path="/order-status"
+          element={
+            <Layout>
+              <OrderStatusPage />
+            </Layout>
+          }
+        />
         <Route
           path="/user-profile"
           element={
